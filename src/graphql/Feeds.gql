@@ -1,0 +1,23 @@
+query allFeeds($condition: FeedCondition!) {
+  allFeeds(condition: $condition) {
+    nodes {
+      id
+      comment
+      tenantId
+      typeId
+      statusId
+      createdOn
+      createdBy
+      feedTypeName
+      feedTypeKey
+      statusName
+      statusKey
+      importId
+      pending
+      started
+      complete
+      errored
+      total
+    }
+  }
+}

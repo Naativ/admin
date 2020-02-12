@@ -1,0 +1,6 @@
+query memberCountByRange($input: CountByRangeInput!) {
+  memberCountByRange(input: $input) {
+    count
+    type
+  }
+}

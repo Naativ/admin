@@ -1,0 +1,27 @@
+query members($memberCon: MemberSearchCondition!) {
+  members(condition: $memberCon) {
+    nodes {
+      id
+      displayName
+      name
+      firstName
+      lastName
+      contactEmail
+      birthdate
+      status
+      slug
+      tenantOid
+      sponsorOid
+      mrn
+      profileUrl
+      createdOn
+      joinedOn
+      timezoneId
+      languageId
+      legalLocaleId
+      tags
+      claimedOn
+      tenantId
+    }
+  }
+}

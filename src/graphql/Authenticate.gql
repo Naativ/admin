@@ -1,0 +1,19 @@
+mutation login($authInput: Credentials!) {
+  login(input: $authInput) {
+    token
+    principal {
+      username
+      identityId
+      memberId
+      tenantId
+      member {
+        displayName
+      }
+      permissions {
+        id
+        name
+        key
+      }
+    }
+  }
+}

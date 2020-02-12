@@ -1,0 +1,6 @@
+mutation createSlide($slideInput: LessonSlide!){
+  createSlide(input: $slideInput) {
+    name
+    slide
+  }
+}

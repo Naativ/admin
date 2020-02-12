@@ -1,0 +1,7 @@
+query allPermissions($id: Int) {
+  getAllPossiblePermissions(id: $id) {
+    name
+    id
+    key
+  }
+}

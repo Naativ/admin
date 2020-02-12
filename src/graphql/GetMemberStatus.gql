@@ -1,0 +1,6 @@
+  query getMemberStatus {
+    getMemberStatus {
+      name
+      id
+    }
+  }

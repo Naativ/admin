@@ -1,0 +1,13 @@
+mutation updateMember($memberInput: MemberInfoInput!) {
+  updateMember(input: $memberInput) {
+    id
+    displayName
+    name
+    firstName
+    lastName
+    slug
+    timezoneId
+    languageId
+    legalLocaleId
+  }
+}

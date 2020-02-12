@@ -1,0 +1,12 @@
+query feedsRecord($condition: FeedRecordCondition!) {
+  allFeedRecords(condition: $condition) {
+    nodes {
+      importId
+      id
+      submittedJson
+      existingJson
+      auxiliaryExisting
+      auxiliarySubmitted
+    }
+  }
+}

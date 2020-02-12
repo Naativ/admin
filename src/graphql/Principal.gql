@@ -1,0 +1,18 @@
+query principal {
+  principal {
+    jwt
+    role
+    displayName
+    username
+    identityId
+    tenantId
+    member{
+      id
+    }
+    permissions {
+      id
+      key
+      name
+    }
+  }
+}

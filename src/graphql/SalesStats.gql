@@ -1,0 +1,24 @@
+query SalesStats($input: SaleStatsOverDateRangeFilter) {
+  saleStatsByDateRange(input: $input) {
+    memberId
+    displayName
+    profileUrl
+    depth
+    sponsorId
+    teamSize
+    frontLineSize
+    mode
+    rangeStart
+    rangeEnd
+    stats {
+      saleCount
+      totalPoints
+      totalAmount
+      commissionablePoints
+      commissionableAmount
+      year
+      month
+      mode
+    }
+  }
+}

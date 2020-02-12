@@ -1,0 +1,10 @@
+mutation(
+  $SetEmailInput: SetEmailInput!
+){
+  setEmail(input: $SetEmailInput){
+    member{
+      id
+      contactEmail
+    }
+  }
+}

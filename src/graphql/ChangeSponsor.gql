@@ -1,0 +1,10 @@
+mutation changeSponsor($input: ChangeSponsorsInput!) {
+  changeSponsors(input: $input) {
+    members {
+      id
+      sponsorOid
+      displayName
+      sponsorOid
+    }
+  }
+}

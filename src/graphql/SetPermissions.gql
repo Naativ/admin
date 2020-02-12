@@ -1,0 +1,9 @@
+mutation setPermissions($input: IamPermissionsSetInput!) {
+  iamPermissionsSet(input: $input) {
+    permissions {
+      name
+      id
+      key
+    }
+  }
+}

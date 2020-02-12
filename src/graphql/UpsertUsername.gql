@@ -1,0 +1,3 @@
+mutation iamUpsertUsername($input: IamUpsertUsernameUpsert!) {
+  iamUpsertUsername(input: $input)
+}

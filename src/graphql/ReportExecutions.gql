@@ -1,0 +1,15 @@
+query reportExecutions($input: ReportExecutionQuery) {
+  reportExecutions(input: $input) {
+    id
+    createdBy
+    createdOn
+    rowCount
+    parameters
+    assetId
+    reportId
+    tenantId
+    name
+    description
+    url
+  }
+}

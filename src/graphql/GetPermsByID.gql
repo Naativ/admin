@@ -1,0 +1,7 @@
+query getPermsByID($identityId: Int!) {
+  iamGetPermsByID(identityId: $identityId) {
+    permissions{
+      id
+    }
+  }
+}

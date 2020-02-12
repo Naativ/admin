@@ -1,0 +1,7 @@
+query features($tenantId: Int!) {
+  getTenantFeatures(tenantId: $tenantId) {
+    id
+    name
+    key
+  }
+}

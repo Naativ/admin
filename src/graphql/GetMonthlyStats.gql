@@ -1,0 +1,47 @@
+query getMonthlyStats(
+  $targetCondition: MemberMonthlyStatCondition!
+  $firstLevelCondition: MemberMonthlyStatCondition!
+) {
+  targetStats: allMemberMonthlyStats(condition: $targetCondition) {
+    nodes {
+      tenantId
+      year
+      month
+      sellerId
+      sellerPath
+      teamSize
+      firstLevelSize
+      secondLevelSize
+      thirdLevelSize
+      fourthLevelSize
+      fifthLevelSize
+      totalAmount
+      totalTeamAmount
+      totalPoints
+      commissionableAmount
+      commissionablePoints
+      sponsorId
+    }
+  }
+  firstLevelStats: allMemberMonthlyStats(condition: $firstLevelCondition) {
+    nodes {
+      tenantId
+      year
+      month
+      sellerId
+      sellerPath
+      teamSize
+      firstLevelSize
+      secondLevelSize
+      thirdLevelSize
+      fourthLevelSize
+      fifthLevelSize
+      totalAmount
+      totalTeamAmount
+      totalPoints
+      commissionableAmount
+      commissionablePoints
+      sponsorId
+    }
+  }
+}

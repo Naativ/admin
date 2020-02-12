@@ -1,0 +1,20 @@
+query byId($condition: MemberSearchCondition!) {
+  members(condition: $condition) {
+    nodes {
+      id
+      displayName
+      name
+      contactEmail
+      firstName
+      lastName
+      slug
+      mrn
+      claimedOn
+      joinedOn
+      timezoneId
+      languageId
+      legalLocaleId
+      status
+    }
+  }
+}

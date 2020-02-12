@@ -1,0 +1,13 @@
+query search($searchInput: SearchHierarchyInput!) {
+  searchHierarchy(input: $searchInput) {
+    hierarchies {
+      name
+      displayName
+      joinedOn
+      contactEmail
+      slug
+      id
+      upline
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query Reports($input: ReportsQueryInput!){
+  reports(input: $input){
+    id
+    name
+    description
+    parameters
+  }
+}

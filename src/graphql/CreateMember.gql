@@ -1,0 +1,24 @@
+mutation DoCreateMember($createMemberInput: CreateMemberInput!) {
+  createMember(input: $createMemberInput) {
+    member {
+      id
+      tenantId
+      name
+      firstName
+      lastName
+      displayName
+      slug
+      tenantOid
+      sponsorOid
+      mrn
+      contactEmail
+      profileUrl
+      createdOn
+      joinedOn
+      claimedOn
+      timezoneId
+      languageId
+      legalLocaleId
+    }
+  }
+}

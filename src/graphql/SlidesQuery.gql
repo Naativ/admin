@@ -1,0 +1,6 @@
+query slidesQuery($slideInput: LessonSlide!) {
+  slideInfo(input: $slideInput) {
+    name
+    slide
+  }
+}

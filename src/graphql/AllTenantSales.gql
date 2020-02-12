@@ -1,0 +1,14 @@
+  query allTenantSalesSummaries($idCondition: TenantSalesSummaryCondition!) {
+    allTenantSalesSummaries(condition: $idCondition) {
+      nodes {
+        tenantId
+        year
+        month
+        commissionableAmount
+        commissionablePoints
+        totalAmount
+        totalPoints
+        saleCount
+      }
+    }
+  }

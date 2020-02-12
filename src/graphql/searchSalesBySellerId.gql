@@ -1,0 +1,39 @@
+query searchSalesBySellerId($saleSearchInput: SaleSearchInput!) {
+  searchSalesBySellerId(input: $saleSearchInput) {
+    saleId
+    providerId
+    providerOid
+    totalPoints
+    totalAmount
+    commissionableAmount
+    commissionablePoints
+    firstName
+    displayName
+    awardedDate
+    sellerEmail
+    customer
+    orderId
+    total
+    status
+    customerNote
+    shippingTotal
+    lineItems
+    shippingCity
+    shippingState
+    shippingCountry
+    shippingZip
+    shippingAddress1
+    shippingAddress2
+    shippingFirstName
+    shippingLastName
+    billingCity
+    billingState
+    billingCountry
+    billingZip
+    billingAddress1
+    billingAddress2
+    billingFirstName
+    billingLastName
+    __typename
+  }
+}

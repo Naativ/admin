@@ -1,0 +1,6 @@
+query memberCount($input: CountInput!) {
+  memberCount(input: $input) {
+    count
+    type
+  }
+}

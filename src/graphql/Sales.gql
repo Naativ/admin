@@ -1,0 +1,15 @@
+query allSales($saleCondition: SaleCondition!) {
+  allSales(condition: $saleCondition) {
+    nodes {
+      month
+      day
+      year
+      totalAmount
+      totalPoints
+      commissionableAmount
+      commissionablePoints
+      sellerDisplayName
+      sellerContactEmail
+    }
+  }
+}

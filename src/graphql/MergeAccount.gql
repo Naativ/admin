@@ -1,0 +1,5 @@
+mutation MergeRequest ($input: IamMergeRequest!) {
+  mergeAccounts(input: $input) {
+    success
+  }
+}
