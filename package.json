@@ -35,7 +35,7 @@
     "babel-jest": "22.4.4",
     "bowser": "2.0.0",
     "bulma": "0.7.2",
-    "chart.js": "2.7.2",
+    "chart.js": "2.9.4",
     "chartkick": "2.3.6",
     "d3": "^5.9.2",
     "d3-context-menu": "^1.1.0",
